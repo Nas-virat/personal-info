@@ -1,0 +1,44 @@
+<div class="w-full h-24 bg-navbar-bg fixed top-0 left-0 right-0 z-navbar">
+  <div class="flex justify-between items-center h-full">
+    <div class="text-white font-bold ml-10 text-3xl">Napas</div>
+    <div class="flex items-center mr-24">
+      <div class="hidden text-white font-bold text-xl ml-16 lg:block hover:text-[#E9C46A]">
+        <a href="#home-page" (click)="handleScroll($event, 'home-page')">Home</a>
+      </div>
+      <div class="hidden text-white font-bold text-xl ml-16 lg:block hover:text-[#E9C46A]">
+        <a href="#skill-page" (click)="handleScroll($event, 'skill-page')">Skill</a>
+      </div>
+      <div class="hidden text-white font-bold text-xl ml-16 lg:block hover:text-[#E9C46A]">
+        <a href="#project-page" (click)="handleScroll($event, 'project-page')">Project</a>
+      </div>
+      <div class="hidden text-white font-bold text-xl ml-16 lg:block hover:text-[#E9C46A]">
+        <a href="#work-page" (click)="handleScroll($event, 'work-page')">Work Experience</a>
+      </div>
+      <div class="hidden text-white font-bold text-xl ml-16 lg:block hover:text-[#E9C46A]">
+        <a href="#education-page" (click)="handleScroll($event, 'education-page')">Education</a>
+      </div>
+    </div>
+    <div class="block lg:hidden pr-5">
+      <button mat-icon-button color="accent" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div *ngIf="open" class="-translate-y-2 flex flex-col items-center text-white bg-[#2A9D8F] font-bold text-xl lg:hidden">
+    <div class="text-white text-center font-bold text-xl py-4 lg:block hover:text-[#E9C46A]">
+      <a href="#home-page" (click)="handleScroll($event, 'home-page')">Home</a>
+    </div>
+    <div class="text-white text-center font-bold text-xl py-4 lg:block hover:text-[#E9C46A]">
+      <a href="#skill-page" (click)="handleScroll($event, 'skill-page')">Skill</a>
+    </div>
+    <div class="text-white text-center font-bold text-xl py-4 lg:block hover:text-[#E9C46A]">
+      <a href="#project-page" (click)="handleScroll($event, 'project-page')">Project</a>
+    </div>
+    <div class="text-white text-center font-bold text-xl py-4 lg:block hover:text-[#E9C46A]">
+      <a href="#work-page" (click)="handleScroll($event, 'work-page')">Work Experience</a>
+    </div>
+    <div class="text-white text-center font-bold text-xl py-4 lg:block hover:text-[#E9C46A]">
+      <a href="#education-page" (click)="handleScroll($event, 'education-page')">Education</a>
+    </div>
+  </div>
+</div>
