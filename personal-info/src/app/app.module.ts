@@ -8,12 +8,20 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SkillComponent } from './skill/skill.component';
+import { WorkexperienceComponent } from './workexperience/workexperience.component';
+import { EducationComponent } from './education/education.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    SkillComponent,
+    WorkexperienceComponent,
+    EducationComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
