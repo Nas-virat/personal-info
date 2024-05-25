@@ -1,0 +1,26 @@
+<div
+  @fadeInOut
+  class="w-80 h-96 bg-white rounded-lg shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-110"
+>
+  <div class="flex flex-col justify-center items-center">
+    <div class="w-full h-44 bg-purple-700 rounded-lg shadow-xl">
+      <a [href]="link">
+        <img [src]="image" class="w-full h-full object-cover rounded-t-lg" />
+      </a>
+    </div>
+    <div class="w-full h-44 p-2">
+      <a [href]="link">
+        <div class="text-base font-bold mt-2 hover:text-orange-500">
+          {{ name }}
+        </div>
+      </a>
+      <div class="pt-1">
+        <p class="text-sm break-words">{{ description }}</p>
+        <div class="flex pt-2 break-words">
+          <p class="text-sm font-bold">Skills: </p>
+          <p class="text-sm font-bold break-words w-60 text-orange-500"> {{ skill }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

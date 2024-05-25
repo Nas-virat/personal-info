@@ -1,1 +1,30 @@
-<p>project works!</p>
+<section class="w-full pt-12 pb-12 bg-project-bg" id="project-page">
+    <div class="flex flex-col justify-center items-center">
+      <div class="text-6xl font-bold text-white pt-24">Project</div>
+      <div class="flex mt-4 pb-3">
+        <button (click)="setTag('all')" 
+                [ngClass]="['bg-button-hover text-white rounded-lg', tag === 'all' ? 'bg-button-project' : 'bg-button-hover', 'px-4 py-2 m-2 hover:bg-button-project']">All
+        </button>
+        <button (click)="setTag('web')" 
+                [ngClass]="['bg-button-hover text-white rounded-lg', tag === 'web' ? 'bg-button-project' : 'bg-button-hover', 'px-4 py-2 m-2 hover:bg-button-project']">Website
+        </button>
+        <button (click)="setTag('app')" 
+                [ngClass]="['bg-button-hover text-white rounded-lg', tag === 'app' ? 'bg-button-project' : 'bg-button-hover', 'px-4 py-2 m-2 hover:bg-button-project']">Application
+        </button>
+        <button (click)="setTag('data')" 
+                [ngClass]="['bg-button-hover text-white rounded-lg', tag === 'data' ? 'bg-button-project' : 'bg-button-hover', 'px-4 py-2 m-2 hover:bg-button-project']">Data
+        </button>
+      </div>
+      <div class="mt-2 grid grid-cols-5 gap-6 place-items-center autofitgrid">
+        <app-card *ngFor="let project of filterProjects()" 
+          [name]="project.name"
+          [image]="project.image"
+          [description]="project.description"
+          [skill]="project.skill"
+          [link]="project.link"
+        >
+        </app-card>
+      </div>
+    </div>
+  </section>
+  
