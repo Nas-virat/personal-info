@@ -4,7 +4,7 @@ const BASE_IMG_URL = '../assets';
 
 export const Allprojects: Project[] = [
     {
-        name: "Pfin personal-finance website",
+        name: "Pfin Personal-Finance Website",
         description: "PFin is a personal-finance website created for user to track personal financial status include Revenue, Expense, Asset, Debt and etc. PFin allows user to add their financial record and view their financial status in a dashboard",
         image: BASE_IMG_URL + '/pfin.png',
         link: "https://github.com/Nas-virat/PFin-personal-finance",
@@ -28,7 +28,7 @@ export const Allprojects: Project[] = [
       skill: " Sci-kit Learn, Python, SMOTE, Logistic Regression"
     },
     {
-      name: " Online Hotel Reservation prediction using machine learning algorithm",
+      name: " Online Hotel Reservation Prediction using Machine Learning Algorithm",
       description: "Using machine learning algorithm to predict customer who likely to cancel the reservation.Exploratory Data Analysis and Data Visualization.",
       image: BASE_IMG_URL + '/HotelReservation.png',
       link: "https://github.com/Nas-virat/Hotel_reservation",
