@@ -7,7 +7,7 @@ import { AllWorkElement } from '../data/workexperience';
   templateUrl: './workexperience.component.html',
   styleUrls: ['./workexperience.component.css'],
 })
-export class Workexperience {
+export class WorkExperienceComponent {
   workelements: WorkExperience[];
   constructor() {
     this.workelements = AllWorkElement;

@@ -4,17 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SkillComponent } from './skill/skill.component';
-import { Workexperience } from './workexperience/workexperience.component';
+import { WorkExperienceComponent } from './workexperience/workexperience.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectComponent } from './project/project.component';
 import { CardComponent } from './component/card/card.component';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { CardModule } from 'primeng/card';
     HomepageComponent,
     NavbarComponent,
     SkillComponent,
-    Workexperience,
+    WorkExperienceComponent,
     EducationComponent,
     ProjectComponent,
     CardComponent,
@@ -36,6 +38,7 @@ import { CardModule } from 'primeng/card';
     FontAwesomeModule,
     TimelineModule,
     CardModule,
+    AnimateOnScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
